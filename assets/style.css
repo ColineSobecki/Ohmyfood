@@ -1,0 +1,186 @@
+* {   
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+body {
+    margin: auto;
+    min-width: 300px;
+    background-color: #FFFFFF;
+}
+
+/*--NAV--*/
+
+.logo_direction {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {  
+    height: 44px;
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+/*--HEADER--*/
+
+#research {
+    display: flex;
+    height: 50px;
+}
+
+#research_input {
+    text-align: center;
+    background: #EAEAEA;
+    width: 100%;
+    border: 0;
+}
+
+.icon {
+    position: absolute;
+    margin-left: 27%;
+    margin-top: 15px
+}
+
+.header_container {
+    background-color:#f7f7f7;
+    height: 270px;
+    padding: 20px; 
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+header p {
+    font-size: 18px;
+    text-align: center;
+    color: #353535;
+    font-weight: 100;
+}
+
+.button_research {
+    height: 50px;
+    padding: 15px;
+    margin: 20px 0px;
+	background-color: white;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 25px;
+	box-sizing: border-box;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.research_position {
+    display: flex;
+    justify-content: center;
+}
+
+/*--MAIN SECTION--*/
+
+main {
+    margin-top: 50px;
+    height: 370px;
+}
+
+main h2 {
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+.function {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 32px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 72px; 
+    width: 100%;
+    border: 2px solid #F6F6F6;
+    border-radius: 30px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    font-weight: bold;  
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.box i {
+    color: #7E7E7E;
+    padding-right: 25px;
+    font-size: large;
+}
+
+/*--SECTION RESTAURANTS--*/
+
+section h2 {
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+.section_restaurants {
+    background-color: #f7f7f7;
+    height: 1250px;
+    padding-top: 40px;
+}
+
+.direction_restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.cardrestaurant {
+    width: 100%;
+    height: 260px;
+    padding: 2px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #D6DBDF;
+    line-height: 8px;
+    margin-top: 20px;      
+}
+
+.section_restaurants img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.txtrestaurant {
+    display: block;
+    font-size: 14px;
+    margin-left: 15px;
+    color: black;
+}
+
+/*--FOOTER--*/
+
+footer {
+    background: #353535;
+}
+
+.logo_footer {
+    width: 137px;
+    height: 27px;
+}
