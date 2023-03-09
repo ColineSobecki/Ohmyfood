@@ -10,6 +10,30 @@ body {
     background-color: #FFFFFF;
 }
 
+.loader {
+    opacity: 0.8;
+    border: 10px solid #9356DC;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
+    width: 50px;
+    height: 50px;
+    top: 0; left: 0; bottom: 0; left: 0;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    -webkit-animation: spin 1.5s linear-infinite;
+    -o-animation: spin 3s linear-infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*--NAV--*/
 
 .logo_direction {
@@ -64,11 +88,9 @@ header p {
 
 .button_research {
     height: 50px;
-    padding: 15px;
+    padding: 20px;
     margin: 20px 0px;
-	background-color: white;
-	border-style: solid;
-	border-width: 2px;
+    border-color: #9356DC;
 	border-radius: 25px;
 	box-sizing: border-box;
 	font-style: normal;
@@ -77,6 +99,12 @@ header p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    color: #FFFFFF;
+    background: linear-gradient(#FF79DA, #9356DC)
+}
+
+input:focus {
+    outline: none;
 }
 
 .research_position {
@@ -109,7 +137,7 @@ header p {
 .function_box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: black;
     height: 72px; 
     width: 100%;
@@ -122,10 +150,30 @@ header p {
     font-weight: 500;
 }
 
+.function_box:hover {
+    background-color: #F5EDFF;
+}
+
 .function_box i {
     color: #7E7E7E;
-    padding-right: 25px;
     font-size: large;
+}
+
+.function_box p {
+    padding-right: 20%;
+}
+
+#number {
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 9px;
+    font-weight: bold;
+    border: 2px solid #9356DC;
+    background-color: #9356DC;
+    padding: 0.2rem 0.5rem;
+    font-size: 14px;
+    margin-left: -10px;
+    position: relative;
 }
 
 /*--SECTION RESTAURANTS--*/
@@ -167,11 +215,41 @@ section h2 {
     border-radius: 20px 20px 0px 0px;
 }
 
+#new {
+    color: #008766;
+    border: 1px solid #99E2D0;
+    background-color: #99E2D0;
+    border-radius: 2px;
+    padding: 10px;
+    position: absolute;
+    right: 30px;
+    margin-top: 15px;
+}
+
 .txtrestaurant {
     display: block;
     font-size: 14px;
     margin-left: 15px;
     color: black;
+}
+
+.section_restaurants i {
+   position: absolute;
+   right: 40px;
+   margin-top: -32px;
+   font-size: 25px;
+   transform: translateY(-50%);
+   transition: all 200ms ease-in-out;
+   cursor: pointer;
+   width: fit-content;
+}
+ 
+.section_restaurants i:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.2);
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: transparent;
+    background-clip: text;
 }
 
 /*--FOOTER--*/
