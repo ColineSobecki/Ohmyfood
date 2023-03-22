@@ -1,0 +1,48 @@
+/*--TABLETTE RESPONSIVE--*/
+
+@media screen and (min-width: 980px) {
+
+/*--FUNCTION SECTION--*/
+
+.functioning {
+    height: 270px;
+}
+
+.functioning h2 {
+    margin-left: 10%;
+}
+
+.function {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+}
+
+/*--FOOTER--*/
+
+footer {
+    height: 150px;
+    position: relative;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-right: 22%;
+    margin-left: 29%;
+}
+
+.logo_footer {
+    width: 137px;
+    height: 27px;
+    position: absolute;
+    top: 60px;
+    right: 7%;
+}
+
+
+}
