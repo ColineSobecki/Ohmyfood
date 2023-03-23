@@ -157,10 +157,14 @@ section p {
     line-height: 8px;
     margin-top: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .menu_txt {
     margin-left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card_direction {
@@ -173,7 +177,6 @@ section p {
 }
 
 .price {
-    position: absolute;
     bottom: 20px;
     right: 20px;
     color: #353535;
@@ -189,9 +192,13 @@ section p {
     border-radius: 0 20px 20px 0;
     width: 59px;
     height: 70px;
-    transition: margin-right 0.5s;
-    display: grid;
-    position: relative
+    transition: all 0.5s;
+    transform: translateX(59px);
+}
+
+.menu_card:hover .checkmark {
+    transform: translateX(0);
+
 }
 
 .checkmark:hover {
@@ -201,7 +208,6 @@ section p {
 .checkmark i {
     top: 25px;
     right: 20px;
-    position: absolute;
     padding: 2px;
     border-radius: 50%;
     background: #FFFFFF

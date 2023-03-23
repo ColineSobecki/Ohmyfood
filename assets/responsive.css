@@ -1,6 +1,6 @@
 /*--TABLETTE RESPONSIVE--*/
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1100px) {
 
 /*--FUNCTION SECTION--*/
 
@@ -19,6 +19,28 @@
     margin-left: 10%;
     margin-right: 10%;
     padding: 0;
+}
+
+/*--MAIN RESRAUTANTS--*/
+
+.section_restaurants {
+    height: 460px;
+}
+
+.section_restaurants h2 {
+    margin-left: 10%;
+}
+
+.direction_restaurants {
+    display: flex;
+    flex-direction: row;
+    margin-left: 9%;
+    margin-right: 9%;
+    gap: 25px;
+}
+
+.card_restaurant {
+    height: 270px;
 }
 
 /*--FOOTER--*/

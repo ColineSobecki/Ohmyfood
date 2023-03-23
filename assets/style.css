@@ -11,21 +11,24 @@ body {
 }
 
 .loader {
-    border: 8px solid #9356DC;
-    border-top: 8px solid #FF79DA;
-    border-bottom: 8px solid #9356DC;
-    width: 80px;
-    height: 80px;
+    border: 10px solid #EAEAEA;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #9356DC;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin: auto;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
+    position: fixed;
+    margin-top: 200px;
+    background-color: #FFFFFF;
 }
 
 .loader_container {
-    position: absolute;
-    top: 200px;
-    right: 38%;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
     animation: hide-loader 3s linear forwards;
 }
 
