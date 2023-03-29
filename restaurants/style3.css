@@ -54,7 +54,7 @@ header {
 .main_container {
     background: #F6F6F6;
     border-radius: 25px 25px;
-    height: 1270px;
+    height: 1370px;
     margin-top: -60px;
     position: absolute;
     width: 100%;
@@ -279,7 +279,7 @@ footer {
     width: 100%;
     padding-top: 40px;
     position:initial;
-    margin-top: 1205px;
+    margin-top: 1290px;
     font-family: 'Roboto';
     position: absolute;
 }
