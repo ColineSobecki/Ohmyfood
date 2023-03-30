@@ -1,11 +1,19 @@
-/*--TABLETTE RESPONSIVE--*/
+/*--DESKTOP RESPONSIVE--*/
 
 @media screen and (min-width: 1100px) {
 
-/*--FUNCTION SECTION--*/
+.header_container {
+    height: 240px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+    /*--FUNCTION SECTION--*/
 
 .functioning {
-    height: 270px;
+    height: 200px;
 }
 
 .functioning h2 {
@@ -24,7 +32,7 @@
 /*--MAIN RESRAUTANTS--*/
 
 .section_restaurants {
-    height: 460px;
+    height: 700px;
 }
 
 .section_restaurants h2 {
@@ -32,22 +40,27 @@
 }
 
 .direction_restaurants {
-    display: flex;
-    flex-direction: row;
     margin-left: 9%;
     margin-right: 9%;
-    gap: 25px;
 }
 
 .card_restaurant {
     height: 270px;
+    width: 100%;
+}
+
+.position {
+    display: flex;
+    gap: 10%;
+    width: 100%;
 }
 
 /*--FOOTER--*/
 
 footer {
-    height: 150px;
     position: relative;
+    margin-top: 0px;
+    height: 115px;
 }
 
 .container_footer {

@@ -73,31 +73,39 @@ header {
 }
 
 .main_title i {
-   transform: translateY(-50%);
-   transition: all 200ms ease-in-out;
-   cursor: pointer;
-   width: fit-content;
-   position: absolute;
-   top: 48px;
-   right: 10%;
-   font-size: 25px;
-}
-
-.heart_icon {
-    color: transparent;
+    transition: all 200ms ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+    width: fit-content;
     position: absolute;
+    top: 37px;
     right: 10%;
-
-}
-    
-
-.main_title i:hover {
-    opacity: 1;
-    transform: translateY(-50%) scale(1.2);
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: transparent;
-    background-clip: text;
-}
+    font-size: 25px;
+ }
+ 
+ .heart_icon {
+     color: transparent;
+     position: absolute;
+     right: 10%;
+ }
+     
+ .main_title i:hover {
+     opacity: 1;
+     transform: scale(1.3);
+     background: linear-gradient(#FF79DA, #9356DC);
+     background-clip: text;
+     -webkit-animation: pulse 0.5s;
+ }
+ 
+ @keyframes pulse {
+     0% {
+         transform: scale(0.5);
+     }
+ 
+     100% {
+         transform: scale(1.3);
+     }
+ }
 
 /*-- CONTAIN MAIN --*/
 
@@ -215,15 +223,14 @@ section p {
     background: #99E2D0;
     box-shadow: 1px 1px 2px 2px; color: #99E2D0;
     border-radius: 0 20px 20px 0;
-    width: 59px;
     height: 70px;
+    width: 59px;
     transition: all 0.5s;
     transform: translateX(59px);
 }
 
 .menu_card:hover .checkmark {
     transform: translateX(0);
-
 }
 
 .checkmark:hover {
