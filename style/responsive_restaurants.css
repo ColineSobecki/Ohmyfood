@@ -9,12 +9,16 @@
     margin-left: 10%;
 }
 
+.menu_card:hover p {
+    width: 0;
+    height: 0;
+    overflow: unset;
+}
 
     /*-- FOOTER --*/
 
 footer {
     position: relative;
-    margin-top: 1190px;
     height: 115px;
 }
 
