@@ -101,16 +101,21 @@ header {
     margin-left: 12px;
     font-weight: lighter;
     font-family: 'Roboto';
-}
-
-span {
-    border-bottom: #99E2D0 solid 3px;
+    position: relative;
 }
 
 section h3 {
     font-size: 18px;
     font-weight: lighter;
     font-family: 'Roboto';
+}
+
+h2::before {
+    content: "";
+    border: #99E2D0 solid 2px;
+    bottom: -4px;
+    width: 35px;
+    position: absolute;
 }
 
 section p {

@@ -275,19 +275,22 @@ section h2 {
 .heart_anim:hover {
     opacity: 1;
     transform: scale(1.2);
-    background: linear-gradient(#FF79DA, #9356DC);
+    background-image: linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
 }
 
 .heart_anim {
     position: absolute;
+    color: transparent;
     right: 40px;
     bottom: 13px;
-    color: transparent;
     font-size: 25px;
     transition: all 200ms ease-in-out;
+    opacity: 0;
+    scale: 1;
     cursor: pointer;
 }
+
 
 /*--FOOTER--*/
 
